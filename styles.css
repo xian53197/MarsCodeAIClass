@@ -1,0 +1,270 @@
+/* 全局样式 */
+body {
+    background-color: #f0f0f0; /* 浅灰色背景 */
+    color: var(--dark-gray); /* 深灰色文字 */
+    font-family: Arial, sans-serif; /* 字体 */
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+nav ul.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul.nav-links li {
+    margin-left: 20px;
+}
+
+nav ul.nav-links li a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul.nav-links li a:hover {
+    color: var(--light-blue);
+}
+
+header.hero {
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 50px 0;
+    text-align: center;
+}
+
+header.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+header.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--light-purple);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: darken(var(--light-purple), 10%);
+}
+
+section.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: var(--white);
+    color: var(--dark-gray);
+}
+
+.feature-card {
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--light-blue);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card i {
+    color: var(--purple);
+    font-size: 36px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.feature-card i:hover {
+    color: darken(var(--purple), 10%);
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: var(--dark-gray);
+}
+
+main {
+    padding: 50px 0;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+section.feature-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section.feature-intro h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+section.feature-intro p {
+    font-size: 18px;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+section.card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+section.card-container .card {
+    background-color: var(--white);
+    color: var(--dark-gray);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+section.card-container .card:hover {
+    transform: translateY(-5px);
+}
+
+section.card-container .card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section.card-container .card p {
+    font-size: 16px;
+    color: var(--light-gray);
+    margin-bottom: 20px;
+}
+
+section.card-container .card.highlight {
+    background-color: var(--purple);
+    color: var(--black);
+}
+
+section.developer-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: var(--white);
+    color: var(--dark-gray);
+}
+
+section.developer-info .developer-card,
+section.developer-info .community-card {
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--light-blue);
+    transition: transform 0.3s ease;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+section.developer-info .developer-card ul,
+section.developer-info .community-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+section.developer-info .developer-card h3,
+section.developer-info .community-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section.developer-info .developer-card p,
+section.developer-info .community-card p {
+    font-size: 16px;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+}
+
+section.developer-info .developer-card .version-info,
+section.developer-info .community-card .version-info {
+    margin-top: 20px;
+}
+
+section.developer-info .developer-card .version-info h4,
+section.developer-info .community-card .version-info h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+section.developer-info .developer-card .version-info p,
+section.developer-info .community-card .version-info p {
+    font-size: 16px;
+    color: var(--dark-gray);
+    margin-bottom: 10px;
+}
+
+section.developer-info .developer-card:hover,
+section.developer-info .community-card:hover {
+    transform: translateY(-5px);
+}
+
+section.download-cta {
+    text-align: center;
+    padding: 50px 0;
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+section.download-cta h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+section.download-cta p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+}
